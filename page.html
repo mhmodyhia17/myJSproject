@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="he">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ספר טלפונים</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>ספר טלפונים</h1>
+      <button id="toggleEffectBtn">הפעל/כבה אפקט</button>
+    </header>
+
+    <main>
+      <section id="search-section">
+        <input type="text" id="search-input" placeholder="חפש לפי שם..." />
+      </section>
+
+      <section id="contacts-section">
+        <ul id="contacts-list"></ul>
+      </section>
+
+      <section id="actions-section">
+        <button id="add-contact-btn">הוסף איש קשר</button>
+        <button id="delete-all-btn">מחק את כל אנשי הקשר</button>
+      </section>
+    </main>
+
+    <footer>
+      <p>מחמוד יחיא &copy;2024</p>
+    </footer>
+
+    <div id="contact-popup" class="popup hidden">
+      <form id="contact-form">
+        <h2>פרטי איש קשר</h2>
+        <label for="contact-name">שם:</label>
+        <input type="text" id="contact-name" name="name" required />
+        <label for="contact-phone">מספר טלפון:</label>
+        <input type="tel" id="contact-phone" name="phone" required />
+        <label for="contact-address">כתובת:</label>
+        <input type="text" id="contact-address" name="address" />
+        <label for="contact-email">Email:</label>
+        <input type="email" id="contact-email" name="email" />
+        <label for="contact-image">URL תמונה:</label>
+        <input type="url" id="contact-image" name="image" />
+        <label for="contact-notes">הערות:</label>
+        <textarea id="contact-notes" name="notes"></textarea>
+        <button type="submit">שמור</button>
+        <button type="button" id="close-popup-btn">סגור</button>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

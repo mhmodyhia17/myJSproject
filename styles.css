@@ -1,0 +1,107 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: #030903;
+  color: #fff;
+  padding: 1em 0;
+  text-align: center;
+}
+
+#toggleEffectBtn {
+  margin-top: 1em;
+}
+
+main {
+  padding: 1em;
+}
+
+#search-section {
+  margin-bottom: 1em;
+}
+
+#search-input {
+  width: 100%;
+  padding: 0.5em;
+  box-sizing: border-box;
+}
+
+#contacts-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+#contacts-section li {
+  background: #a55353;
+  margin: 0.5em 0;
+  padding: 0.5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#contacts-section li img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 1em;
+}
+
+#contacts-section li:hover {
+  background: #ddd;
+}
+
+.actions {
+  display: flex;
+  gap: 1em;
+}
+
+#actions-section {
+  margin-top: 1em;
+  display: flex;
+  gap: 1em;
+  justify-content: center;
+}
+
+footer {
+  text-align: center;
+  padding: 1em 0;
+  background: #333;
+  color: #fff;
+  position: relative;
+  margin-top: 1em;
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  padding: 2em;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.hidden {
+  display: none;
+}
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+#contact-form label,
+#contact-form input,
+#contact-form textarea {
+  margin-bottom: 1em;
+}
+
+.effect {
+  background: linear-gradient(45deg, #f06, transparent);
+}
